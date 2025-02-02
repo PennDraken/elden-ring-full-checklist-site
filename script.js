@@ -13,14 +13,14 @@ if (window.helms) {
         const sectionContainer = document.createElement("div");
         sectionContainer.classList.add("section-container");
 
-        // Optional: Create a title for each section
+        // Use the first element in the section as the title
         const sectionTitle = document.createElement("h3");
         sectionTitle.classList.add("section-title");
-        sectionTitle.textContent = `Section ${sectionIndex + 1}`; // Customize this text as needed
+        sectionTitle.textContent = section[0]; // First helm in section as the title
         sectionContainer.appendChild(sectionTitle);
 
-        // Create grid items for the current section
-        section.forEach(helm => {
+        // Create grid items for the current section, skipping the first item (since it's the title)
+        section.slice(1).forEach(helm => {
             const item = document.createElement("div");
             item.classList.add("grid-item");
 
@@ -46,4 +46,19 @@ if (window.helms) {
     });
 } else {
     console.error("Helms data not found.");
+}
+
+
+function openCategory(evt, categoryName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Clear grid
+
+
+
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(categoryName).style.display = "block";
+    evt.currentTarget.className += " active";
 }
