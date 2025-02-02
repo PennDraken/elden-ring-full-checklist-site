@@ -1,0 +1,35 @@
+/* styles.css */
+
+/* Set up grid layout */
+#grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 10px; /* Space between grid items */
+    padding: 20px;
+}
+
+/* Style for each grid item */
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+/* Style for image */
+.grid-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Style for the label */
+.grid-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+}
