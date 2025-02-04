@@ -3,7 +3,7 @@ if (window.helms) {
     const grid = document.getElementById("grid");
 
     // Function to format the helm name into a filename (e.g., replace spaces with dashes)
-    function formatHelmNameToFilename(helmName) {
+    function formatItemNameToFile(helmName) {
         return helmName.replace(/'/g, "_");
     }
 
@@ -32,7 +32,7 @@ if (window.helms) {
             img.classList.add("grid-image");
 
             // Format the helm name to match the image filename
-            const imageFilename = formatHelmNameToFilename(helm) + '.png';
+            const imageFilename = formatItemNameToFile(helm) + '.png';
             img.src = `images/low_res/${imageFilename}`;  // Load the image from the 'images' folder
             img.alt = `Image for ${helm}`;
 
