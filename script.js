@@ -1,49 +1,82 @@
-// Make sure the helms data is loaded
-if (window.helms) {
-    const grid = document.getElementById("grid");
+const grid = document.getElementById("gridHelmets");
 
-    // Function to format the helm name into a filename (e.g., replace spaces with dashes)
-    function formatHelmNameToFilename(helmName) {
-        return helmName.replace(/'/g, "_");
+// Helper function to format item names to file-compatible names
+function formatItemNameToFile(helmName) {
+    return helmName.replace(/'/g, "_");
+}
+
+// Function to populate the grid with items
+function fillGrid(grid, items) {
+    // Clear existing content in the grid
+    while (grid.firstChild) {
+        grid.removeChild(grid.firstChild);
     }
 
-    // Loop over the helms array to create grid items
-    window.helms.forEach((section, sectionIndex) => {
-        // Create a new section container (flexbox or grid)
+    items.forEach((section) => {
+        // Create a new section container
         const sectionContainer = document.createElement("div");
         sectionContainer.classList.add("section-container");
 
-        // Optional: Create a title for each section
+        // Use the first element in the section as the title
         const sectionTitle = document.createElement("h3");
         sectionTitle.classList.add("section-title");
-        sectionTitle.textContent = `Section ${sectionIndex + 1}`; // Customize this text as needed
+        sectionTitle.textContent = section[0]; // First item in section as the title
         sectionContainer.appendChild(sectionTitle);
 
         // Create grid items for the current section
-        section.forEach(helm => {
-            const item = document.createElement("div");
-            item.classList.add("grid-item");
+        section.slice(1).forEach((itemName) => {
+            const itemContainer = document.createElement("div");
+            itemContainer.classList.add("grid-item");
 
             const label = document.createElement("div");
             label.classList.add("grid-label");
-            label.textContent = helm;  // Set label to the helm name
+            label.textContent = itemName; // Set label to the item name
 
             const img = document.createElement("img");
             img.classList.add("grid-image");
 
-            // Format the helm name to match the image filename
-            const imageFilename = formatHelmNameToFilename(helm) + '.png';
-            img.src = `images/low_res/${imageFilename}`;  // Load the image from the 'images' folder
-            img.alt = `Image for ${helm}`;
+            // Format the item name to match the image filename
+            const imageFilename = formatItemNameToFile(itemName) + ".png";
+            img.src = `images/low_res/${imageFilename}`; // Load the image from the 'images' folder
+            img.alt = `Image for ${itemName}`;
 
-            item.appendChild(label);
-            item.appendChild(img);
-            sectionContainer.appendChild(item);
+            // Append label and image to the item container
+            itemContainer.appendChild(label);
+            itemContainer.appendChild(img);
+            sectionContainer.appendChild(itemContainer);
         });
 
         // Append the section container to the grid container
         grid.appendChild(sectionContainer);
     });
-} else {
-    console.error("Helms data not found.");
 }
+
+// Function to open a specific category
+function openCategory(evt, categoryName) {
+    // Hide all tab contents
+    const tabcontent = document.querySelectorAll(".tabcontent");
+    tabcontent.forEach((content) => {
+        content.style.display = "none"; // Hide all tab contents
+    });
+
+    // Remove "active" class from all tab links
+    const tablinks = document.querySelectorAll(".tablinks");
+    tablinks.forEach((link) => {
+        link.className = link.className.replace(" active", "");
+    });
+
+    // Show the selected tab content
+    // document.getElementById(categoryName).style.display = "block";
+    // evt.currentTarget.className += " active";
+
+    // Populate the grid for the selected category
+    if (categoryName === "Helmets") {
+        fillGrid(grid, window.helms); // Replace `window.helms` with your actual data
+    } else if (categoryName === "Chest") {
+        fillGrid(grid, window.chest); // Replace `window.helms` with your actual data
+    } else {
+        fillGrid(grid, [["Sorry, no items defined in this category yet. Coming soon!"]]); // Replace `window.helms` with your actual data
+    }
+}
+
+openCategory(null, "Helmets");
