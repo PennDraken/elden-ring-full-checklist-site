@@ -1,7 +1,7 @@
 // Stored in JS to make it easier to have static web
 // List of lists. First item of internal list is the label for the corresponding lists section
 const helms = [
-    [1, "Commoner's Headband", "Commoner's Headband (Altered)", "Aristocrat Headband", "Aristocrat Hat", "Old Aristocrat Cowl",
+    ["Helmets", "Commoner's Headband", "Commoner's Headband (Altered)", "Aristocrat Headband", "Aristocrat Hat", "Old Aristocrat Cowl",
         "Page Hood",
         "High Page Hood",
         "Guardian Mask",
@@ -15,51 +15,52 @@ const helms = [
         "Black Dumpling",
         "Mushroom Head",
         "Mushroom Crown"],
-    [2, "Astrologer Hood", "Juvenile Scholar Cap", "Karolos Glintstone Crown", "Olivinus Glintstone Crown", 
+    ["", "Astrologer Hood", "Juvenile Scholar Cap", "Karolos Glintstone Crown", "Olivinus Glintstone Crown", 
         "Twinsage Glintstone Crown", "Witch's Glintstone Crown", "Lazuli Glintstone Crown", "Haima Glintstone Crown", 
         "Hierodas Glintstone Crown", "Spellblade's Pointed Hat", "Alberich's Pointed Hat", "Alberich's Pointed Hat (Altered)", 
         "Preceptor's Big Hat", "Mask of Confidence", "Azur's Glintstone Crown", "Lusat's Glintstone Crown", 
         "Queen's Crescent Crown", "Snow Witch Hat", "Fia's Hood", "Prophet Blindfold", "Traveling Maiden Hood", 
         "Finger Maiden Fillet", "Sage Hood", "Greathood", "Radiant Gold Mask"],
 
-    [3, "Perfumer Hood", "Traveler's Hat", "Depraved Perfumer Headscarf", "Ruler's Mask", "Consort's Mask", 
+    ["", "Perfumer Hood", "Traveler's Hat", "Depraved Perfumer Headscarf", "Ruler's Mask", "Consort's Mask", 
         "Marais Mask", "Great Horned Headband", "Shining Horned Headband", "Godskin Apostle Hood", "Godskin Noble Hood", 
         "Sanguine Noble Hood"],
 
-    [4, "Crimson Tear Scarab", "Cerulean Tear Scarab", "Ash-of-War Scarab", "Glintstone Scarab", "Incantation Scarab", 
+    ["", "Crimson Tear Scarab", "Cerulean Tear Scarab", "Ash-of-War Scarab", "Glintstone Scarab", "Incantation Scarab", 
         "Imp Head (Cat)", "Imp Head (Wolf)", "Imp Head (Fanged)", "Imp Head (Long-Tongued)", "Imp Head (Corpse)", 
         "Imp Head (Elder)", "Nox Mirrorhelm", "Iji's Mirrorhelm", "Silver Tear Mask", "Envoy Crown", "Octopus Head", 
         "Jar", "Albinauric Mask", "Black Wolf Mask"],
 
-    [5, "Blue Cloth Cowl", "Crimson Hood", "Navy Hood", "White Mask", "Nomadic Merchant's Chapeau", "Bandit Mask", 
+    ["", "Blue Cloth Cowl", "Crimson Hood", "Navy Hood", "White Mask", "Nomadic Merchant's Chapeau", "Bandit Mask", 
         "Black Hood", "Confessor Hood", "Confessor Hood (Altered)", "Omensmirk Mask", "Skeletal Mask"],
 
-    [6, "Foot Soldier Helm", "Foot Soldier Helmet", "Foot Soldier Cap", "Gilded Foot Soldier Cap", "Sacred Crown Helm", 
+    ["", "Foot Soldier Helm", "Foot Soldier Helmet", "Foot Soldier Cap", "Gilded Foot Soldier Cap", "Sacred Crown Helm", 
         "Highwayman Hood", "Vulgar Militia Helm", "Duelist Helm", "Rotten Duelist Helm", "Nox Monk Hood", 
         "Nox Monk Hood (Altered)", "Nox Swordstress Crown", "Nox Swordstress Crown (Altered)", "Night Maiden Twin Crown", 
         "Champion Headband"],
 
-    [7, "Chain Coif", "Iron Helmet", "Godrick Soldier Helm", "Raya Lucarian Helm", "Radahn Soldier Helm", 
+    ["", "Chain Coif", "Iron Helmet", "Godrick Soldier Helm", "Raya Lucarian Helm", "Radahn Soldier Helm", 
         "Leyndell Soldier Helm", "Haligtree Helm", "Exile Hood", "Kaiden Helm", "Land of Reeds Helm", "Okina Mask", 
         "Iron Kasa", "Eccentric's Hood", "Eccentric's Hood (Altered)", "Marionette Soldier Helm", 
         "Marionette Soldier Birdhelm", "Blue Silver Mail Hood", "Fire Monk Hood", "Blackflame Monk Hood", "Zamor Mask", 
         "Black Knife Hood", "Malenia's Winged Helm", "Elden Lord Crown"],
 
-    [8, "Knight Helm", "Vagabond Knight Helm", "Greathelm", "Carian Knight Helm", "Godrick Knight Helm", 
+    ["", "Knight Helm", "Vagabond Knight Helm", "Greathelm", "Carian Knight Helm", "Godrick Knight Helm", 
         "Cuckoo Knight Helm", "Redmane Knight Helm", "Gelmir Knight Helm", "Leyndell Knight Helm", "Haligtree Knight Helm", 
         "Bloodhound Knight Helm", "Cleanrot Helm", "Cleanrot Helm (Altered)"],
 
-    [9, "Raging Wolf Helm", "Hoslow's Helm", "Diallos's Mask", "Twinned Helm", "Drake Knight Helm", 
+    ["", "Raging Wolf Helm", "Hoslow's Helm", "Diallos's Mask", "Twinned Helm", "Drake Knight Helm", 
         "Drake Knight Helm (Altered)", "Briar Helm", "Fingerprint Helm", "Royal Remains Helm", "All-Knowing Helm", 
         "Royal Knight Helm", "Maliketh's Helm"],
 
-    [10, "Banished Knight Helm", "Banished Knight Helm (Altered)", "Night's Cavalry Helm", "Night's Cavalry Helm (Altered)", 
+    ["", "Banished Knight Helm", "Banished Knight Helm (Altered)", "Night's Cavalry Helm", "Night's Cavalry Helm (Altered)", 
         "Veteran's Helm", "Scaled Helm", "Beast Champion Helm", "Tree Sentinel Helm", "Malformed Dragon Helm", 
         "Crucible Axe Helm", "Crucible Tree Helm", "Radahn's Redmane Helm", "Lionel's Helm", "Bull-Goat Helm", 
         "Omen Helm", "Fire Prelate Helm", "Pumpkin Helm"]
 ]
 
 const chest = [armor_list = [
+    "Chest Armor",
     "Cloth Garb",
     "Traveler's Clothes",
     "Commoner's Simple Garb",

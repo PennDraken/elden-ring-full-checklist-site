@@ -2,18 +2,20 @@
 /* Style the tab */
 .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
+    /*border: 1px solid #ccc;*/
     background-color: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
   }
   
   /* Style the buttons that are used to open the tab content */
   .tab button {
     background-color: inherit;
-    float: left;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 14px 32px;
     transition: 0.3s;
   }
   
@@ -43,9 +45,10 @@
 
 .section-title {
     grid-column: span 5; /* Make the title span all 5 columns */
-    font-size: 1.5rem;
+    font-size: 3rem;
     margin-bottom: 10px;
     text-align: center;
+    font-weight: 100;
     width: 100%;
 }
 
@@ -55,6 +58,7 @@
     justify-content: space-between; /* Ensures content is spaced out */
     align-items: center;
     text-align: center;
+    font-weight: bolder;
     height: 100%; /* Ensures equal height */
 }
 
