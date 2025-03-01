@@ -3,7 +3,7 @@
 .tab {
     overflow: hidden;
     /*border: 1px solid #ccc;*/
-    background-color: rgba(241, 241, 241, 0.144);;
+    background-color: rgb(10, 10, 10); /*rgba(241, 241, 241, 0.144)*/
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
@@ -17,11 +17,14 @@
     cursor: pointer;
     padding: 14px 32px;
     transition: 0.3s;
+    color: #ffffff;
+    font-size: 1rem;
   }
   
   /* Change background color of buttons on hover */
   .tab button:hover {
     background-color: #ddd;
+    color: #000000;
   }
   
   /* Create an active/current tablink class */
@@ -60,6 +63,8 @@
     align-items: center;
     text-align: center;
     height: 100%; /* Ensures equal height */
+    background-color: black;
+    border-radius: 8px;
 }
 
 .grid-label {
@@ -70,7 +75,7 @@
     text-align: center;
     color: #ffffff;
     font-size: 1rem;
-    padding: 5px;
+    padding: 20px;
 }
 
 .grid-image {
