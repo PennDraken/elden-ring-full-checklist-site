@@ -72,9 +72,9 @@ body {
     max-width: 1600px;
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 equal-width columns */
-    gap: 1vw; /* Space between items */
+    gap: 0.5vw; /* Space between items */
     align-items: stretch; /* Ensures all items stretch to the tallest one */
-    padding: 1vw;
+    padding: 0.25vw;
 }
 
 /* Title of the section/ dividers */
