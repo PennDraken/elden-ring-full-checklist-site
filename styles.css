@@ -43,7 +43,7 @@ body {
     padding: 14px 32px;
     transition: 0.3s;
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 2vw;
   }
   
   /* Change background color of buttons on hover */
@@ -128,7 +128,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1vw;
     padding: 20px;
 }
 
