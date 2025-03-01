@@ -16,7 +16,7 @@ body {
   }
 
   .grid-item .grid-label {
-    font-size: 0.5rem; /* Adjust label font size */
+    font-size: 1vw; /* Adjust label font size */
   }
   
   .tab button {
