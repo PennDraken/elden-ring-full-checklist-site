@@ -92,7 +92,7 @@ body {
     align-items: center;
     text-align: center;
     height: 100%; /* Ensures equal height */
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.411);
     border-radius: 8px;
     color: #ffffff; /* Text color */
     cursor: pointer;
