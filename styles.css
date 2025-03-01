@@ -81,7 +81,7 @@ body {
 }
 
 .grid-item:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(179, 207, 243);
   color: #000000; /* Text color */
   transition: 0.2s;
   transform: scale(1.05);
@@ -91,6 +91,13 @@ body {
   background-color: rgb(76, 112, 158);
   color: #ffffff; /* Text color */
   transition: 1s;
+}
+
+.grid-item.selected:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000000; /* Text color */
+  transition: 0.2s;
+  transform: scale(1.05);
 }
 
 .grid-label {
