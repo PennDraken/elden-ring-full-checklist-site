@@ -27,6 +27,7 @@ function clickedItem(event){
 
 // Function to populate the grid with items
 function fillGrid(grid, items) {
+    let itemIndex = 0; // Used for animation on bootup
     // Clear existing content in the grid
     while (grid.firstChild) {
         grid.removeChild(grid.firstChild);
@@ -54,7 +55,11 @@ function fillGrid(grid, items) {
             label.textContent = itemName; // Set label to the item name
 
             if (savedItems.includes(itemName)) {
-                itemContainer.classList.add("selected");
+                const timeDelay = 50;
+                itemIndex += 1;
+                setTimeout(() => {
+                    itemContainer.classList.add("selected");
+                }, itemIndex * timeDelay - timeDelay*0.9);            
             }
 
             const img = document.createElement("img");
