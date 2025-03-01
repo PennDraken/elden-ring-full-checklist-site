@@ -81,8 +81,8 @@ body {
 }
 
 .grid-item:hover {
-  background-color: rgb(179, 207, 243);
-  color: #000000; /* Text color */
+  background-color: rgb(54, 54, 54);
+  color: #ffffff; /* Text color */
   transition: 0.2s;
   transform: scale(1.05);
 }
@@ -94,8 +94,8 @@ body {
 }
 
 .grid-item.selected:hover {
-  background-color: rgb(255, 255, 255);
-  color: #000000; /* Text color */
+  background-color: rgb(86, 119, 161);
+  color: #ffffff; /* Text color */
   transition: 0.2s;
   transform: scale(1.05);
 }
