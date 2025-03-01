@@ -71,9 +71,13 @@ function openCategory(evt, categoryName) {
 
     // Populate the grid for the selected category
     if (categoryName === "Helmets") {
-        fillGrid(grid, window.helms); // Replace `window.helms` with your actual data
+        fillGrid(grid, window.helms);
     } else if (categoryName === "Chest") {
-        fillGrid(grid, window.chest); // Replace `window.helms` with your actual data
+        fillGrid(grid, window.chest);
+    } else if (categoryName === "Arms") {
+        fillGrid(grid, window.arms);
+    } else if (categoryName === "Legs") {
+        fillGrid(grid, window.legs);
     } else {
         fillGrid(grid, [["Sorry, no items defined in this category yet. Coming soon!"]]); // Replace `window.helms` with your actual data
     }

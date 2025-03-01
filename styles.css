@@ -50,6 +50,7 @@
     text-align: center;
     font-weight: 100;
     width: 100%;
+    color: #ffffff;
 }
 
 .grid-item {
@@ -58,7 +59,6 @@
     justify-content: space-between; /* Ensures content is spaced out */
     align-items: center;
     text-align: center;
-    font-weight: bolder;
     height: 100%; /* Ensures equal height */
 }
 
@@ -68,6 +68,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: #ffffff;
+    font-size: 1.5rem;
     padding: 5px;
 }
 

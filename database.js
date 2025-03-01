@@ -237,9 +237,37 @@ const chest = [armor_list = [
 ]
 ]
 
+const arms = [
+    ["Arms", "Traveler's Manchettes", "Guardian Bracers", "Bloodsoaked Manchettes", "Mushroom Arms"],
+    ["", "Astrologer Gloves", "Sorcerer Manchettes", "Battlemage Manchettes", "Errant Sorcerer Manchettes", "Spellblade's Gloves", "Alberich's Bracers", "Preceptor's Gloves", "Azur's Manchettes", "Lusat's Manchettes", "Queen's Bracelets", "Traveling Maiden Gloves", "Gold Bracelets"],
+    ["", "Perfumer Gloves", "Traveler's Gloves", "Depraved Perfumer Gloves", "Godskin Apostle Bracelets", "Godskin Noble Bracelets"],
+    ["", "Leather Gloves", "Warrior Gauntlets", "Noble's Gloves", "War Surgeon Gloves", "Bandit Manchettes", "Confessor Gloves", "Omenkiller Long Gloves"],
+    ["", "Foot Soldier Gauntlets", "Highwayman Gauntlets", "Vulgar Militia Gauntlets", "Nox Bracelets", "Champion Bracers"],
+    ["", "Chain Gauntlets", "Iron Gauntlets", "Godrick Soldier Gauntlets", "Raya Lucarian Gauntlets", "Radahn Soldier Gauntlets", "Leyndell Soldier Gauntlets", "Haligtree Gauntlets", "Mausoleum Gauntlets", "Exile Gauntlets", "Kaiden Gauntlets", "Land of Reeds Gauntlets", "White Reed Gauntlets", "Ronin's Gauntlets", "Eccentric's Manchettes", "Blue Silver Bracelets", "Fire Monk Gauntlets", "Blackflame Monk Gauntlets", "Zamor Bracelets", "Black Knife Gauntlets", "Malenia's Gauntlet", "Elden Lord Bracers"],
+    ["", "Knight Gauntlets", "Vagabond Knight Gauntlets", "Carian Knight Gauntlets", "Godrick Knight Gauntlets", "Cuckoo Knight Gauntlets", "Redmane Knight Gauntlets", "Gelmir Knight Gauntlets", "Leyndell Knight Gauntlets", "Haligtree Knight Gauntlets", "Mausoleum Knight Gauntlets", "Bloodhound Knight Gauntlets", "Cleanrot Gauntlets"],
+    ["", "Raging Wolf Gauntlets", "Hoslow's Gauntlets", "Twinned Gauntlets", "Drake Knight Gauntlets", "Blaidd's Gauntlets", "Briar Gauntlets", "Fingerprint Gauntlets", "Royal Remains Gauntlets", "All-Knowing Gauntlets", "Royal Knight Gauntlets", "Maliketh's Gauntlets"],
+    ["", "Banished Knight Gauntlets", "Night's Cavalry Gauntlets", "Veteran's Gauntlets", "Scaled Gauntlets", "Beast Champion Gauntlets", "Tree Sentinel Gauntlets", "Malformed Dragon Gauntlets", "Crucible Gauntlets", "Radahn's Gauntlets"],
+    ["", "Lionel's Gauntlets", "Bull-Goat Gauntlets", "Omen Gauntlets", "Fire Prelate Gauntlets"]
+  ];
+
+  const legs = [
+    ["Legs", "Cloth Trousers", "Traveler's Boots", "Commoner's Shoes", "Aristocrat Boots", "Old Aristocrat Shoes", "Page Trousers", "Guardian Greaves", "Prisoner Trousers", "Mushroom Legs"],
+    ["", "Astrologer Trousers", "Sorcerer Leggings", "Battlemage Legwraps", "Errant Sorcerer Boots", "Spellblade's Trousers", "Alberich's Trousers", "Preceptor's Trousers", "Old Sorcerer's Legwraps", "Queen's Leggings", "Snow Witch Skirt", "Prophet Trousers", "Traveling Maiden Boots", "Finger Maiden Shoes", "Sage Trousers", "Gold Waistwrap"],
+    ["", "Perfumer Sarong", "Traveler's Slops", "Depraved Perfumer Trousers", "Consort's Trousers", "Fur Leggings", "Shaman Leggings", "Godskin Apostle Trousers", "Godskin Noble Trousers", "Sanguine Noble Waistcloth"],
+    ["", "Leather Trousers", "Leather Boots", "Warrior Greaves", "Noble's Trousers", "War Surgeon Trousers", "Nomadic Merchant's Trousers", "Bandit Boots", "Confessor Boots", "Omenkiller Boots"],
+    ["", "Foot Soldier Greaves", "Vulgar Militia Greaves", "Duelist Greaves", "Rotten Duelist Greaves", "Nox Monk Greaves", "Champion Gaiters"],
+    ["", "Chain Leggings", "Godrick Soldier Greaves", "Raya Lucarian Greaves", "Radahn Soldier Greaves", "Leyndell Soldier Greaves", "Haligtree Greaves", "Mausoleum Greaves", "Exile Greaves", "Kaiden Trousers", "Land of Reeds Greaves", "White Reed Greaves", "Ronin's Greaves", "Eccentric's Breeches", "Blue Silver Mail Skirt", "Fire Monk Greaves", "Blackflame Monk Greaves", "Zamor Legwraps", "Black Knife Greaves", "Malenia's Greaves", "Elden Lord Greaves"],
+    ["", "Knight Greaves", "Vagabond Knight Greaves", "Carian Knight Greaves", "Godrick Knight Greaves", "Cuckoo Knight Greaves", "Redmane Knight Greaves", "Gelmir Knight Greaves", "Leyndell Knight Greaves", "Haligtree Knight Greaves", "Mausoleum Knight Greaves", "Bloodhound Knight Greaves", "Cleanrot Greaves"],
+    ["", "Raging Wolf Greaves", "Hoslow's Greaves", "Twinned Greaves", "Drake Knight Greaves", "Blaidd's Greaves", "Briar Greaves", "Fingerprint Greaves", "Royal Remains Greaves", "All-Knowing Greaves", "Royal Knight Greaves", "Maliketh's Greaves"],
+    ["", "Banished Knight Greaves", "Night's Cavalry Greaves", "Veteran's Greaves", "Scaled Greaves", "Beast Champion Greaves", "Tree Sentinel Greaves", "Malformed Dragon Greaves", "Crucible Greaves", "Radahn's Greaves"],
+    ["", "Lionel's Greaves", "Bull-Goat Greaves", "Omen Greaves", "Fire Prelate Greaves"]
+];
+
 
 // Export for use in HTML
 if (typeof window !== "undefined") {
     window.helms = helms;
     window.chest = chest;
+    window.arms  = arms;
+    window.legs  = legs;
 }
