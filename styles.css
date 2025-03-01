@@ -1,6 +1,6 @@
 body {
   background-image: url("background/repeating-dither.png"), url("background/dither-background.png");
-  background-color: #000000;
+  background-color: #111111;
 }
 
 /*--------------------TAB GROUP----------------------------*/
@@ -80,16 +80,9 @@ body {
 }
 
 .grid-item:hover {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Ensures content is spaced out */
-  align-items: center;
-  text-align: center;
-  height: 100%; /* Ensures equal height */
   background-color: rgb(255, 255, 255);
-  border-radius: 8px;
   color: #000000; /* Text color */
-
+  transition: 0.3s;
 }
 
 .grid-label {
