@@ -1,6 +1,7 @@
 body {
   background-image: url("background/repeating-dither.png"), url("background/dither-background.png");
   background-color: #111111;
+  overflow-x: hidden;
 }
 
 /* Responsive font size adjustment for smaller screens */
