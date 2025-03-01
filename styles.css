@@ -77,12 +77,19 @@ body {
     border-radius: 8px;
     color: #ffffff; /* Text color */
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .grid-item:hover {
   background-color: rgb(255, 255, 255);
   color: #000000; /* Text color */
   transition: 0.3s;
+}
+
+.grid-item.selected {
+  background-color: rgb(52, 65, 184);
+  color: #ffffff; /* Text color */
+  transition: 1s;
 }
 
 .grid-label {

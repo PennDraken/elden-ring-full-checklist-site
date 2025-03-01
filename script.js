@@ -1,9 +1,19 @@
 const tabcontent = document.querySelectorAll(".tabcontent");
 const grid = document.getElementById("gridHelmets");
+const savedItems = JSON.parse(localStorage.getItem("myList")); /* Stores items that the user owns */
 
 // Helper function to format item names to file-compatible names
 function formatItemNameToFile(helmName) {
     return helmName.replace(/'/g, "_");
+}
+
+function clickedItem(event){
+    // Check if item in savedItems
+    if (event.currentTarget.classList.contains("selected")) {
+        event.currentTarget.classList.remove("selected");
+    } else {
+        event.currentTarget.classList.add("selected");
+    }
 }
 
 // Function to populate the grid with items
@@ -28,6 +38,7 @@ function fillGrid(grid, items) {
         section.slice(1).forEach((itemName) => {
             const itemContainer = document.createElement("div");
             itemContainer.classList.add("grid-item");
+            itemContainer.addEventListener("click", clickedItem);
 
             const label = document.createElement("div");
             label.classList.add("grid-label");
