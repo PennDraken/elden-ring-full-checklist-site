@@ -63,7 +63,7 @@ body {
 #grid {
     display: flex;
     flex-direction: column; /* Stack sections vertically */
-    gap: 30px; /* Space between sections */
+    gap: 3vw; /* Space between sections */
     max-width: 100%;
 }
 
@@ -72,9 +72,9 @@ body {
     max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 equal-width columns */
-    gap: 8px; /* Space between items */
+    gap: 1vw; /* Space between items */
     align-items: stretch; /* Ensures all items stretch to the tallest one */
-    padding: 15px;
+    padding: 1vw;
 }
 
 /* Title of the section/ dividers */
@@ -132,8 +132,8 @@ body {
     justify-content: center;
     text-align: center;
     font-size: 1.6vw;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
 }
 
 .grid-image {
