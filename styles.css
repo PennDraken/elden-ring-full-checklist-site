@@ -1,13 +1,19 @@
+body {
+  background-image: url("background/repeating-dither.png"), url("background/dither-background.png");
+  background-color: #000000;
+}
+
 /*--------------------TAB GROUP----------------------------*/
 /* Style the tab */
 .tab {
-    overflow: hidden;
-    /*border: 1px solid #ccc;*/
-    background-color: rgb(10, 10, 10); /*rgba(241, 241, 241, 0.144)*/
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-  }
+  overflow: hidden;
+  background-color: rgb(10, 10, 10);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  /* Centers the buttons */
+  align-items: center;  /* Aligns vertically if needed */
+}
+
   
   /* Style the buttons that are used to open the tab content */
   .tab button {
@@ -40,13 +46,16 @@
 }
 
 .section-container {
+    margin: 0 auto;
+    max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 equal-width columns */
-    gap: 15px; /* Space between items */
+    gap: 8px; /* Space between items */
     align-items: stretch; /* Ensures all items stretch to the tallest one */
     padding: 15px;
 }
 
+/* Title of the section/ dividers */
 .section-title {
     grid-column: span 5; /* Make the title span all 5 columns */
     font-size: 3rem;
@@ -89,7 +98,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    
     font-size: 1rem;
     padding: 20px;
 }
