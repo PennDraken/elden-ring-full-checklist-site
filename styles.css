@@ -77,7 +77,7 @@ body {
     border-radius: 8px;
     color: #ffffff; /* Text color */
     cursor: pointer;
-    transition: 0.3s;
+    transition: 1s;
 }
 
 .grid-item:hover {
@@ -87,7 +87,7 @@ body {
 }
 
 .grid-item.selected {
-  background-color: rgb(52, 65, 184);
+  background-color: rgb(76, 112, 158);
   color: #ffffff; /* Text color */
   transition: 1s;
 }

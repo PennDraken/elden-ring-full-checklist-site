@@ -1,6 +1,6 @@
 const tabcontent = document.querySelectorAll(".tabcontent");
 const grid = document.getElementById("gridHelmets");
-const savedItems = JSON.parse(localStorage.getItem("myList")); /* Stores items that the user owns */
+let savedItems = JSON.parse(localStorage.getItem("savedItems")) || []; /* Stores items that the user owns */
 
 // Helper function to format item names to file-compatible names
 function formatItemNameToFile(helmName) {
@@ -9,11 +9,20 @@ function formatItemNameToFile(helmName) {
 
 function clickedItem(event){
     // Check if item in savedItems
+    const itemName = event.currentTarget.querySelector(".grid-label").textContent;
     if (event.currentTarget.classList.contains("selected")) {
         event.currentTarget.classList.remove("selected");
+        if (savedItems.includes(itemName)) {
+            savedItems = savedItems.filter(item => item !== itemName)
+        }
     } else {
         event.currentTarget.classList.add("selected");
+        if (!savedItems.includes(itemName)) {
+            savedItems.push(itemName)
+        }
     }
+    // Update local storage
+    localStorage.setItem("savedItems", JSON.stringify(savedItems));
 }
 
 // Function to populate the grid with items
@@ -43,6 +52,10 @@ function fillGrid(grid, items) {
             const label = document.createElement("div");
             label.classList.add("grid-label");
             label.textContent = itemName; // Set label to the item name
+
+            if (savedItems.includes(itemName)) {
+                itemContainer.classList.add("selected");
+            }
 
             const img = document.createElement("img");
             img.classList.add("grid-image");
