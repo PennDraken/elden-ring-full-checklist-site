@@ -8,11 +8,11 @@ body {
 /* Responsive font size adjustment for smaller screens */
 @media screen and (max-width: 800px) {
   body {
-    font-size: 0.5rem; /* Smaller font size on small screens */
+    font-size: 1vw; /* Smaller font size on small screens */
   }
 
   .section-title {
-    font-size: 1rem; /* Adjust the section title size */
+    font-size: 2vw; /* Adjust the section title size */
   }
 
   .grid-item .grid-label {
@@ -20,7 +20,7 @@ body {
   }
   
   .tab button {
-    padding: 10px 20px; /* Adjust button padding for small screens */
+    padding: 0px 0px; /* Adjust button padding for small screens */
   }
 }
 
