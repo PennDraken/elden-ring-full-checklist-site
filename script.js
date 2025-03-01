@@ -1,3 +1,4 @@
+const tabcontent = document.querySelectorAll(".tabcontent");
 const grid = document.getElementById("gridHelmets");
 
 // Helper function to format item names to file-compatible names
@@ -54,7 +55,6 @@ function fillGrid(grid, items) {
 // Function to open a specific category
 function openCategory(evt, categoryName) {
     // Hide all tab contents
-    const tabcontent = document.querySelectorAll(".tabcontent");
     tabcontent.forEach((content) => {
         content.style.display = "none"; // Hide all tab contents
     });

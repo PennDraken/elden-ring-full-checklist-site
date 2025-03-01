@@ -44,6 +44,7 @@
     grid-template-columns: repeat(5, 1fr); /* 5 equal-width columns */
     gap: 15px; /* Space between items */
     align-items: stretch; /* Ensures all items stretch to the tallest one */
+    padding: 15px;
 }
 
 .section-title {
@@ -65,6 +66,21 @@
     height: 100%; /* Ensures equal height */
     background-color: black;
     border-radius: 8px;
+    color: #ffffff; /* Text color */
+    cursor: pointer;
+}
+
+.grid-item:hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures content is spaced out */
+  align-items: center;
+  text-align: center;
+  height: 100%; /* Ensures equal height */
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  color: #000000; /* Text color */
+
 }
 
 .grid-label {
@@ -73,7 +89,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #ffffff;
+    
     font-size: 1rem;
     padding: 20px;
 }
