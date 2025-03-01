@@ -3,6 +3,25 @@ body {
   background-color: #111111;
 }
 
+/* Responsive font size adjustment for smaller screens */
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 0.5rem; /* Smaller font size on small screens */
+  }
+
+  .section-title {
+    font-size: 1rem; /* Adjust the section title size */
+  }
+
+  .grid-item .grid-label {
+    font-size: 0.5rem; /* Adjust label font size */
+  }
+  
+  .tab button {
+    padding: 10px 20px; /* Adjust button padding for small screens */
+  }
+}
+
 /*--------------------TAB GROUP----------------------------*/
 /* Style the tab */
 .tab {
