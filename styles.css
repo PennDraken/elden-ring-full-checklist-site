@@ -132,7 +132,8 @@ body {
     justify-content: center;
     text-align: center;
     font-size: 1.6vw;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .grid-image {
