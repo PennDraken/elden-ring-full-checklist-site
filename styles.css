@@ -99,11 +99,20 @@ body {
     transition: 0.1s;
 }
 
-.grid-item:hover {
-  background-color: rgb(54, 54, 54);
-  color: #ffffff; /* Text color */
-  transition: 0.2s;
-  transform: scale(1.05);
+@media (hover: hover) and (pointer: fine) {/*Ensure that hover does not work on mobile*/
+  .grid-item:hover {
+    background-color: rgb(54, 54, 54);
+    color: #ffffff; /* Text color */
+    transition: 0.2s;
+    transform: scale(1.05);
+  }
+
+  .grid-item.selected:hover {
+    background-color: rgb(86, 119, 161);
+    color: #ffffff; /* Text color */
+    transition: 0.2s;
+    transform: scale(1.05);
+  }
 }
 
 .grid-item.selected {
@@ -112,12 +121,6 @@ body {
   transition: 1s;
 }
 
-.grid-item.selected:hover {
-  background-color: rgb(86, 119, 161);
-  color: #ffffff; /* Text color */
-  transition: 0.2s;
-  transform: scale(1.05);
-}
 
 .grid-label {
     flex-grow: 1; /* Allows text to take available space */
