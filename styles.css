@@ -3,26 +3,11 @@ body {
   background-color: #111111;
   overflow-x: hidden;
   max-width: 100%;
+  margin: 0;
 }
 
 /* Responsive font size adjustment for smaller screens */
-@media screen and (max-width: 800px) {
-  body {
-    font-size: 1vw; /* Smaller font size on small screens */
-  }
 
-  .section-title {
-    font-size: 2vw; /* Adjust the section title size */
-  }
-
-  .grid-item .grid-label {
-    font-size: 1vw; /* Adjust label font size */
-  }
-  
-  .tab button {
-    padding: 0px 0px; /* Adjust button padding for small screens */
-  }
-}
 
 /*--------------------TAB GROUP----------------------------*/
 /* Style the tab */
@@ -38,14 +23,18 @@ body {
   
 /* Style the buttons that are used to open the tab content */
 .tab button {
+  font-family: inherit;
   background-color: inherit;
   border: none;
+  border-radius: 1vw;
   outline: none;
   cursor: pointer;
-  padding: 14px 32px;
+  padding: 32px 32px;
+  margin: 0.2vw;
   transition: 0.3s;
   color: #ffffff;
-  font-size: 2vw;
+  font-size: 3vw;
+  background-color: #1a1a1a;
 }
 
 /* Change background color of buttons on hover */
@@ -63,7 +52,7 @@ body {
 #grid {
     display: flex;
     flex-direction: column; /* Stack sections vertically */
-    gap: 3vw; /* Space between sections */
+    gap: 1vw; /* Space between sections */
     max-width: 100%;
 }
 
@@ -80,7 +69,7 @@ body {
 /* Title of the section/ dividers */
 .section-title {
     grid-column: span 5; /* Make the title span all 5 columns */
-    font-size: 3rem;
+    font-size: 4vw;
     margin-bottom: 1vw;
     text-align: center;
     font-weight: 100;
@@ -96,7 +85,7 @@ body {
     text-align: center;
     height: 100%; /* Ensures equal height */
     background-color: rgba(0, 0, 0, 0.411);
-    border-radius: 8px;
+    border-radius: 1vw;
     color: #ffffff; /* Text color */
     cursor: pointer;
     transition: 0.1s;
