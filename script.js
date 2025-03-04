@@ -26,7 +26,7 @@ function clickedItem(event){
 }
 
 // Function to populate the grid with items
-function fillGrid(grid, items) {
+function fillGrid(grid, items, folderName) {
     let itemIndex = 0; // Used for animation on bootup
     // Clear existing content in the grid
     while (grid.firstChild) {
@@ -67,7 +67,7 @@ function fillGrid(grid, items) {
 
             // Format the item name to match the image filename
             const imageFilename = formatItemNameToFile(itemName) + ".png";
-            img.src = `images/low_res/${imageFilename}`; // Load the image from the 'images' folder
+            img.src = `images/${folderName}/${imageFilename}`; // Load the image from the 'images' folder
             img.alt = `Image for ${itemName}`;
 
             // Append label and image to the item container
@@ -100,14 +100,17 @@ function openCategory(evt, categoryName) {
 
     // Populate the grid for the selected category
     if (categoryName === "Helmets") {
-        fillGrid(grid, window.helms);
+        fillGrid(grid, window.helms, "low_res");
     } else if (categoryName === "Chest") {
-        fillGrid(grid, window.chest);
+        fillGrid(grid, window.chest, "low_res");
     } else if (categoryName === "Arms") {
-        fillGrid(grid, window.arms);
+        fillGrid(grid, window.arms, "low_res");
     } else if (categoryName === "Legs") {
-        fillGrid(grid, window.legs);
-    } else {
+        fillGrid(grid, window.legs, "low_res");
+    } else if (categoryName === "Weapons") {
+        fillGrid(grid, window.weapons, "weapons");
+    } else
+    {
         fillGrid(grid, [["Sorry, no items defined in this category yet. Coming soon!"]]); // Replace `window.helms` with your actual data
     }
 }

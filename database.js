@@ -250,7 +250,7 @@ const arms = [
     ["", "Lionel's Gauntlets", "Bull-Goat Gauntlets", "Omen Gauntlets", "Fire Prelate Gauntlets"]
   ];
 
-  const legs = [
+const legs = [
     ["Legs", "Cloth Trousers", "Traveler's Boots", "Commoner's Shoes", "Aristocrat Boots", "Old Aristocrat Shoes", "Page Trousers", "Guardian Greaves", "Prisoner Trousers", "Mushroom Legs"],
     ["", "Astrologer Trousers", "Sorcerer Leggings", "Battlemage Legwraps", "Errant Sorcerer Boots", "Spellblade's Trousers", "Alberich's Trousers", "Preceptor's Trousers", "Old Sorcerer's Legwraps", "Queen's Leggings", "Snow Witch Skirt", "Prophet Trousers", "Traveling Maiden Boots", "Finger Maiden Shoes", "Sage Trousers", "Gold Waistwrap"],
     ["", "Perfumer Sarong", "Traveler's Slops", "Depraved Perfumer Trousers", "Consort's Trousers", "Fur Leggings", "Shaman Leggings", "Godskin Apostle Trousers", "Godskin Noble Trousers", "Sanguine Noble Waistcloth"],
@@ -263,11 +263,37 @@ const arms = [
     ["", "Lionel's Greaves", "Bull-Goat Greaves", "Omen Greaves", "Fire Prelate Greaves"]
 ];
 
+const weapons = [
+    ["Weapons"],
+    ["Dagger", "Dagger", "Parrying Dagger", "Misericorde", "Great Knife", "Bloodstained Dagger", "Erdsteel Dagger", "Fire Knight's Shortsword", "Elden Ring: Shadow of the Erdtree", "Wakizashi", "Main-gauche", "Celebrant's Sickle", "Ivory Sickle", "Crystal Knife", "Scorpion's Stinger", "Cinquedea", "Glintstone Kris", "Reduvia", "Blade of Calling", "Black Knife", "Smithscript Dagger"],
+    ["Straight Swords", "Short Sword", "Longsword", "Broadsword", "Weathered Straight Sword", "Lordsworn's Straight Sword", "Noble's Slender Sword", "Cane Sword", "Stone-Sheathed Sword", "Warhawk's Talon", "Lazuli Glintstone Sword", "Carian Knight's Sword", "Crystal Sword", "Rotten Crystal Sword", "Miquellan Knight's Sword", "Ornamental Straight Sword", "Golden Epitaph", "Sword of St Trina", "Velvet Sword of St Trina", "Regalia of Eochaid", "Coded Sword", "Sword of Night and Flame", "Sword of Light", "Sword of Darkness"],
+    ["Light Greatswords", "Milady", "Leda's Sword", "Rellana's Twin Blades"],
+    ["Greatswords", "Bastard Sword", "Claymore", "Iron Greatsword", "Lordsworn's Greatsword", "Knight's Greatsword", "Banished Knight's Greatsword", "Forked Greatsword", "Lizard Greatsword", "Flamberge", "Gargoyle's Greatsword", "Gargoyle's Blackblade", "Inseparable Sword", "Sword of Milos", "Marais Executioner's Sword", "Greatsword of Solitude", "Ordovis's Greatsword", "Alabaster Lord's Sword", "Death's Poker", "Helphen's Steeple", "Blasphemous Blade", "Golden Order Greatsword", "Dark Moon Greatsword", "Greatsword of Damnation", "Sacred Relic Sword"],
+    ["Colossal Swords", "Zweihander", "Greatsword", "Watchdog's Greatsword", "Fire Knight's Greatsword", "Troll's Golden Sword", "Troll Knight's Sword", "Moonrithyll's Knight Sword", "Royal Greatsword", "Grafted Blade Greatsword", "Ruins Greatsword", "Ancient Meteoric Ore Greatsword", "Starscourge Greatsword", "Greatsword of Radahn (Lord)", "Greatsword of Radahn (Light)", "Godslayer's Greatsword", "Maliketh's Black Blade"],
+    ["Thrusting Swords", "Rapier", "Estoc", "Noble's Estoc", "Cleanrot Knight's Sword", "Rogier's Rapier", "Antspur Rapier", "Frozen Needle", "Carian Sorcery Sword"],
+    ["Heavy Thrusting Swords", "Great Epee", "Godskin Stitcher", "Queelign's Greatsword", "Bloody Helice", "Dragon King's Cragblade", "Sword Lance"],
+    ["Curved Swords", "Scimitar", "Falchion", "Shamshir", "Grossmesser", "Bandit's Curved Sword", "Shotel", "Scavenger's Curved Sword", "Mantis Blade", "Beastman's Curved Sword", "Flowing Curved Sword", "Serpent-God's Curved Sword", "Magma Blade", "Spirit Sword", "Nox Flowing Sword", "Wing of Astel", "Falx", "Dancing Blade of Ranah", "Horned Warrior's Sword", "Eclipse Shotel"],
+    ["Curved Greatswords", "Dismounter", "Omen Cleaver", "Monk's Flameblade", "Beastman's Cleaver", "Freyja's Greatsword", "Bloodhound's Fang", "Onyx Lord's Greatsword", "Zamor Curved Sword", "Magma Wyrm's Scalesword", "Horned Warrior's Greatsword", "Morgott's Cursed Sword"],
+    ["Backhand Blades", "Backhand Blade", "Smithscript Cirque", "Curseblade's Cirque"],
+    ["Katanas", "Uchigatana", "Nagakiba", "Serpentbone Blade", "Meteoric Ore Blade", "Moonveil", "Sword of Night", "Rivers of Blood", "Dragonscale Blade", "Star-Lined Sword", "Hand of Malenia"],
+    ["Great Katanas", "Great Katana", "Dragon-Hunter's Great Katana", "Rakshasa's Great Katana"],
+    ["Twinblades", "Twinblade", "Twinned Knight Swords", "Black Steel Twinblade", "Godskin Peeler", "Gargoyle's Twinblade", "Gargoyle's Black Blades", "Eleonora's Poleblade", "Euporia"],
+    ["Axes", "Hand Axe", "Forked Hatchet", "Forked-Tongue Hatchet", "Battle Axe", "Messmer Soldier's Axe", "Warped Axe", "Jawbone Axe", "Iron Cleaver", "Highland Axe", "Smithscript Axe", "Celebrant's Cleaver", "Sacrificial Axe", "Icerind Hatchet", "Ripple Blade", "Stormhawk Axe", "Rosus' Axe", "Death Knight's Twin Axes"],
+    ["Greataxes", "Greataxe", "Crescent Moon Axe", "Longhaft Axe", "Executioner's Greataxe", "Great Omenkiller Cleaver", "Rusted Anchor", "Butchering Knife", "Bonny Butchering Knife", "Gargoyle's Great Axe", "Gargoyle's Black Axe", "Death Knight's Longhaft Axe", "Winged Greathorn", "Axe of Godrick", "Putrescence Cleaver"],
+    ["Hammers", "Club", "Curved Club", "Spiked Club", "Stone Club", "Mace", "Morning Star", "Warpick", "Hammer", "Monk's Flamemace", "Varré's Bouquet", "Envoy's Horn", "Nox Flowing Hammer", "Ringed Finger", "Scepter of the All-Knowing", "Flowerstone Gavel", "Marika's Hammer"],
+    ["Flails", "Flail", "Nightrider Flail", "Chainlink Flail", "Family Heads", "Serpent Flail", "Bastard's Stars"],
+    ["Great Hammers", "Large Club", "Curved Great Club", "Great Mace", "Pickaxe", "Brick Hammer", "Battle Hammer", "Rotten Battle Hammer", "Celebrant's Skull", "Great Stars", "Black Steel Greathammer", "Smithscript Greathammer", "Greathorn Hammer", "Envoy's Long Horn", "Cranial Vessel Candlestand", "Beastclaw Greathammer", "Devourer's Scepter"],
+    ["Colossal Weapons", "Duelist Greataxe", "Rotten Greataxe", "Golem's Halberd", "Giant-Crusher", "Prelate's Inferno Crozier", "Great Club", "Troll's Hammer", "Dragon Greatclaw", "Bloodfiend's Arm", "Watchdog's Staff", "Staff of the Avatar", "Rotten Staff", "Envoy's Greathorn", "Ghiza's Wheel", "Fallingstar Beast Jaw", "Anvil Hammer", "Devonia's Hammer", "Axe of Godfrey", "Shadow Sunflower Blossom", "Gazing Finger"],
+    ["Spears", "Short Spear", "Iron Spear", "Spear", "Partisan", "Pike", "Swift Spear", "Spiked Spear", "Cross-Naginata", "Clayman's Harpoon", "Bloodfiend's Fork", "Celebrant's Rib-Rake", "Torchpole", "Smithscript Spear", "Inquisitor's Girandole", "Crystal Spear", "Rotten Crystal Spear", "Cleanrot Spear", "Death Ritual Spear", "Bolt of Gransax"],
+    ["Great Spears", "Lance", "Messmer Soldier's Spear", "Treespear", "Serpent-Hunter", "Siluria's Tree", "Vyke's War Spear", "Barbed Staff-Spear", "Bloodfiend's Sacred Spear", "Mohgwyn's Sacred Spear", "Spear of the Impaler"],
+    ["Reapers", "Scythe", "Grave Scythe", "Halo Scythe", "Winged Scythe", "Obsidian Lamina"]
+];
 
 // Export for use in HTML
 if (typeof window !== "undefined") {
-    window.helms = helms;
-    window.chest = chest;
-    window.arms  = arms;
-    window.legs  = legs;
+    window.helms   = helms;
+    window.chest   = chest;
+    window.arms    = arms;
+    window.legs    = legs;
+    window.weapons = weapons;
 }
