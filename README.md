@@ -9,4 +9,3 @@ https://penndraken.github.io/elden-ring-full-checklist-site/
 
 # TODO
 - Weapons, and key items
-- Better mobile support
