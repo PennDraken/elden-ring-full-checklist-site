@@ -1,5 +1,7 @@
 # Link to site
 https://penndraken.github.io/elden-ring-full-checklist-site/
+
+# Screenshot
 ![image](https://github.com/user-attachments/assets/c576ea11-b622-44d7-997e-195d18ec621f)
 
 # About project
