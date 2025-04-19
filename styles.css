@@ -6,6 +6,16 @@ body {
   margin: 0;
 }
 
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
 /* Responsive font size adjustment for smaller screens */
 
 
@@ -44,7 +54,7 @@ body {
 }
 
 /* Create an active/current tablink class */
-.tab button.active {
+.tab button:active {
   background-color: #ccc;
 }
 
@@ -58,7 +68,7 @@ body {
 
 .section-container {
     margin: 0 auto;
-    max-width: 1600px;
+    max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 equal-width columns */
     gap: 0.5vw; /* Space between items */
