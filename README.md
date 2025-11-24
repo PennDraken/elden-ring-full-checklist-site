@@ -2,7 +2,8 @@
 https://penndraken.github.io/elden-ring-full-checklist-site/
 
 # Screenshot
-![image](https://github.com/user-attachments/assets/c576ea11-b622-44d7-997e-195d18ec621f)
+<img width="836" height="1336" alt="image" src="https://github.com/user-attachments/assets/cf94a276-d85a-4ae5-a4bf-0a9648474651" />
+
 
 # About project
 This website aims to show all items available in the game Elden Ring, in the same order as they appear in the in-game menus. You can mark items as obtained by clicking them, which is stored between browser sessions.
